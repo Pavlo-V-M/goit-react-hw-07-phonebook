@@ -1,4 +1,63 @@
-@import-normalize; /* bring in normalize.css styles */
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  outline: 2px solid red;
+  outline-offset: -2px;
+  padding: 10px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+label:nth-child(n + 2) {
+  margin-top: 10px;
+}
+
+input {
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 20px;
+}
+
+span {
+  margin-right: 20px;
+}
+
+.AppWrap {
+  /* height: 100vh; */
+  width: 296px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 10px;
+  /* font-size: 40; */
+  color: #010101;
+}
+
+/* @import-normalize; */
+/* bring in normalize.css styles */
 
 body {
   margin: 0;
